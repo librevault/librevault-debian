@@ -1,0 +1,23 @@
+Source: librevault
+Priority: optional
+Maintainer: Alexander Shishenko <alex@shishenko.com>
+Build-Depends: debhelper (>= 9), cmake, protobuf-compiler, libboost-all-dev, libprotobuf-dev (>= 3), libcrypto++-dev (>= 5.6.3)
+Standards-Version: 3.9.6
+Section: net
+Homepage: https://librevault.com
+Vcs-Git: https://github.com/Librevault/librevault.git
+Vcs-Browser: https://github.com/Librevault/librevault
+
+Package: librevault-daemon
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Librevault File synchronization tool
+ Librevault File synchronization tool
+
+Package: librevault
+Section: net
+Architecture: any
+Depends: librevault-daemon (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Librevault File synchronization tool
+ Librevault File synchronization tool
