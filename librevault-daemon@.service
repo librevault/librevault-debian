@@ -1,6 +1,8 @@
 [Unit]
-Description=Librevault - Peer-to-peer, decentralized and open source file sync for %I
+Description=Librevault - Peer-to-peer, decentralized and open source file sync (instance for %I)
 After=network.target
+PartOf=librevault-daemon.service
+ReloadPropagatedFrom=librevault-daemon.service
 
 [Service]
 User=%i
