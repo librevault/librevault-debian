@@ -1,0 +1,11 @@
+[Unit]
+Description=Librevault - Peer-to-peer, decentralized and open source file sync (multi-instance-master)
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+ExecReload=/bin/true
+
+[Install]
+WantedBy=multi-user.target

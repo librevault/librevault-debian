@@ -1,1 +1,2 @@
+debian/librevault-daemon@.service /lib/systemd/system/
 usr/bin/librevault-daemon

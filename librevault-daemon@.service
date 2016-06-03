@@ -1,0 +1,13 @@
+[Unit]
+Description=Librevault - Peer-to-peer, decentralized and open source file sync (instance for %I)
+After=network.target
+PartOf=librevault-daemon.service
+ReloadPropagatedFrom=librevault-daemon.service
+
+[Service]
+User=%i
+ExecStart=/usr/bin/librevault-daemon
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
