@@ -1,7 +1,7 @@
 Source: librevault
 Priority: optional
 Maintainer: Alexander Shishenko <alex@shishenko.com>
-Build-Depends: debhelper (>= 9), cmake (>= 3.2), protobuf-compiler, libboost-all-dev, libprotobuf-dev (>= 3), libcrypto++-dev (>= 5.6.3), libssl-dev (>= 1.0.0), libsqlite3-dev, qtbase5-dev (>= 5.3), libqt5svg5-dev, qttools5-dev, qttools5-dev-tools, libqt5websockets5-dev, libnatpmp-dev, dh-systemd (>= 1.5)
+Build-Depends: debhelper (>= 9), build-essential, cmake (>= 3.2), protobuf-compiler, libboost-all-dev, libprotobuf-dev (>= 3), libcrypto++-dev (>= 5.6.3), libssl-dev (>= 1.0.0), libsqlite3-dev, qtbase5-dev (>= 5.3), libqt5svg5-dev, qttools5-dev, qttools5-dev-tools, libqt5websockets5-dev, libnatpmp-dev, dh-systemd (>= 1.5)
 Standards-Version: 3.9.7
 Section: net
 Homepage: https://librevault.com
